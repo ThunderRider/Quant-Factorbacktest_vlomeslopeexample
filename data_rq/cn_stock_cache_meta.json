@@ -1,0 +1,122 @@
+{
+  "source": "rqdatac",
+  "status": "ok",
+  "created_at": "2026-05-14T13:46:57",
+  "as_of_date": "2026-05-13",
+  "start_date": "2020-01-01",
+  "end_date": "2026-05-13",
+  "price_fields": [
+    "open",
+    "close",
+    "total_turnover"
+  ],
+  "turnover_source": "get_turnover_rate",
+  "turnover_field": "today",
+  "market_cap_factor": "market_cap",
+  "stock_count": 5114,
+  "chunk_size": 500,
+  "storage": "parquet",
+  "write_csv": false,
+  "rq_login": "config_license_key",
+  "universe_file": "data_rq/cn_stock_universe_20260513.csv",
+  "files": {
+    "open": {
+      "parquet": "data_rq/cn_stock_open_20200101_20260513.parquet"
+    },
+    "close": {
+      "parquet": "data_rq/cn_stock_close_20200101_20260513.parquet"
+    },
+    "total_turnover": {
+      "parquet": "data_rq/cn_stock_total_turnover_20200101_20260513.parquet"
+    },
+    "turnover_rate": {
+      "parquet": "data_rq/cn_stock_turnover_rate_20200101_20260513.parquet"
+    },
+    "market_cap": {
+      "parquet": "data_rq/cn_stock_market_cap_20200101_20260513.parquet"
+    }
+  },
+  "summaries": {
+    "open": {
+      "shape": [
+        1538,
+        5114
+      ],
+      "finite_count": 7098641,
+      "total_count": 7865332,
+      "finite_ratio": 0.9025227415702224,
+      "min": 0.4085661081307228,
+      "mean": 19.675381604370347,
+      "median": 11.63,
+      "negative_count": 0,
+      "negative_ratio": 0.0,
+      "positive_ratio": 1.0
+    },
+    "close": {
+      "shape": [
+        1538,
+        5114
+      ],
+      "finite_count": 7098641,
+      "total_count": 7865332,
+      "finite_ratio": 0.9025227415702224,
+      "min": 0.3999647163806024,
+      "mean": 19.69509634537779,
+      "median": 11.63828922276054,
+      "negative_count": 0,
+      "negative_ratio": 0.0,
+      "positive_ratio": 1.0
+    },
+    "total_turnover": {
+      "shape": [
+        1538,
+        5114
+      ],
+      "finite_count": 7098641,
+      "total_count": 7865332,
+      "finite_ratio": 0.9025227415702224,
+      "min": 0.0,
+      "mean": 246922587.64985928,
+      "median": 86992162.0,
+      "negative_count": 0,
+      "negative_ratio": 0.0,
+      "positive_ratio": 0.9983832116598093
+    },
+    "turnover_rate": {
+      "shape": [
+        1538,
+        5114
+      ],
+      "finite_count": 7098641,
+      "total_count": 7865332,
+      "finite_ratio": 0.9025227415702224,
+      "min": 0.0,
+      "mean": 3.191270457288941,
+      "median": 1.7203,
+      "negative_count": 0,
+      "negative_ratio": 0.0,
+      "positive_ratio": 0.9983832116598093
+    },
+    "market_cap": {
+      "shape": [
+        1538,
+        5114
+      ],
+      "finite_count": 7097570,
+      "total_count": 7865332,
+      "finite_ratio": 0.9023865744001652,
+      "min": 277134030.0,
+      "mean": 19818027385.185898,
+      "median": 5755864461.5,
+      "negative_count": 0,
+      "negative_ratio": 0.0,
+      "positive_ratio": 1.0
+    }
+  },
+  "alignment": {
+    "common_dates": 1538,
+    "common_stocks": 5114,
+    "first_common_date": "2020-01-02",
+    "last_common_date": "2026-05-13"
+  }
+}

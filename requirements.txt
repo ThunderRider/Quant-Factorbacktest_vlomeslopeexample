@@ -1,0 +1,9 @@
+pandas
+numpy
+numba
+vectorbt
+rqdatac
+rqalpha-plus
+TA-Lib
+tqdm
+pyarrow
